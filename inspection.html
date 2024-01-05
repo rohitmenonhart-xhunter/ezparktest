@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Firebase JavaScript libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+    <script src="inspection.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Inspection Request</title>
+</head>
+<body>
+    <h1>Inspection Request</h1>
+    
+    <!-- User details form -->
+    <div id="userDetailsForm">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" required><br>
+        <label for="userPhoneNumber">Phone Number:</label>
+        <input type="tel" id="userPhoneNumber" required><br>
+        <button id="submitUserDetails">Submit</button>
+    </div>
+
+    <div id="map" style="height: 700px;"></div>
+</body>
+</html>

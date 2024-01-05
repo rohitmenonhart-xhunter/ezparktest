@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        #site-logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001; /* Ensure the logo is on top of the map and button */
+            max-width: 100%; /* Ensure the logo doesn't exceed its natural size */
+            max-height: 100px; /* Set the maximum height of the logo */
+        }
+    </style>
+    <title>ezpark-your parking companion</title>
+</head>
+<body onload="initMap()">
+    <div id="map-container">
+        <img id="site-logo" src="sitelogo.png" alt="Site Logo">
+        <div id="map" style="height: 1000px;"></div>
+        <button id="inspectionButton" onclick="promptForInspectionDetails()">New Inspection Request</button>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

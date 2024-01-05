@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#search-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+input, button {
+    margin: 10px 0;
+}
+/* styles.css */
+
+#map-container {
+    position: relative;
+}
+
+#inspectionButton {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#inspectionButton:hover {
+    background-color: #8B0000; /* Dark red shade on hover */
+}
+/* Add dark red theme */
+
+
+/* User details form */
+
+
+label {
+    color: #a41010; /* Dark red */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+    color: #333; /* Set a contrasting text color */
+}
+
+button {
+    background-color: #8B0000; /* Dark red */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Map */
+#map {
+    height: 1000px;
+    
+    border-radius: 10px;
+}

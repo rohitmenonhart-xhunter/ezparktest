@@ -165,7 +165,7 @@ function initMap() {
     const reloadButton = L.control({ position: 'topright' });
     reloadButton.onAdd = function (map) {
         const div = L.DomUtil.create('div', 'reload-button');
-        div.innerHTML = '<button onclick="reloadPage()">check for parking availability</button>';
+        div.innerHTML = '<button onclick="reloadPage()">🔄</button>';
         return div;
     };
     reloadButton.addTo(map);

@@ -36,7 +36,7 @@ function initMap() {
     const navigateButton = L.control({ position: 'topleft' });
     navigateButton.onAdd = function (map) {
         const div = L.DomUtil.create('div', 'navigate-button');
-        div.innerHTML = '<button onclick="navigateToParkingSlot()">Navigate</button>';
+        div.innerHTML = '<button onclick="navigateToParkingSlot()">Nav</button>';
         return div;
     };
     navigateButton.addTo(map);

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Slot Booking Form</title>
+    <!-- Add your CSS styling here if needed -->
+</head>
+<body>
+
+    <h2>Parking Slot Booking Form</h2>
+
+    <form id="bookingForm">
+        <label for="timing">Select Booking Duration:</label>
+        <select id="timing" name="timing">
+            <option value="5 mins">5 mins</option>
+            <option value="15 mins">15 mins</option>
+            <option value="45 mins">45 mins</option>
+            <option value="1 hr">1 hr</option>
+            <option value="2 hrs">2 hrs</option>
+            <option value="4 hrs">4 hrs</option>
+            <option value="6 hrs">6 hrs</option>
+        </select>
+
+        <!-- Add any additional fields as needed -->
+
+        <button type="button" onclick="bookParkingSlot()">Book Slot</button>
+        <button type="button" onclick="backToHome()">Back to Home</button>
+    </form>
+
+    <!-- Add your script at the end of the body -->
+    <script>
+        // Retrieve user details from localStorage
+        const tempUserDetails = JSON.parse(localStorage.getItem('tempUserDetails'));
+
+        // Function to handle booking the parking slot
+        function bookParkingSlot() {
+            const selectedDuration = document.getElementById('timing').value;
+
+            // Perform any additional validation or processing as needed
+
+            // Redirect back to the home page after booking
+            alert(`Parking slot at ${tempUserDetails.storeName} booked for ${selectedDuration}.`);
+            window.location.href = 'index.html'; // Change 'index.html' to your home page file name
+        }
+
+        // Function to navigate back to the home page
+        function backToHome() {
+            // Redirect back to the home page without booking
+            window.location.href = 'index.html'; // Change 'index.html' to your home page file name
+        }
+    </script>
+</body>
+</html>
